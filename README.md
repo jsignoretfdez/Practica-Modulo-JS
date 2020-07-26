@@ -26,9 +26,7 @@ Contiene los datos que van a ser leidos.
 
 1- Debemos clonar el repositorio
 
-Code `https://github.com/jsignoretfdez/Practica-Modulo-JS.git`
-
-https://github.com/jsignoretfdez/Practica-Modulo-JS.git
+Code `git clone https://github.com/jsignoretfdez/Practica-Modulo-JS.git`
 
 2- Podemos dejar los datos del archivo .json o modificarlos para que sobreescriba los archivos de escritura.
 
