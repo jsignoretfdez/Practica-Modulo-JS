@@ -1,5 +1,10 @@
 'use strict'
 
+/*
+ Importo el modulo de node fs para utilizar los metodos y propiedade del modulo FileSystem
+ Importo el archivo converter para poder usar las funciones que contiene el archivo converter
+ */
+
 const fs = require('fs');
 let convert = require ('./converter.js')
 
@@ -41,6 +46,8 @@ const leerSincrono = function () {
         }, 2000);
     });
 }
+
+/* Exportar los modulos para poder usarlos en otro archivo */
 
 module.exports = {
     leerSincrono,

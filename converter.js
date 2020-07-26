@@ -2,8 +2,13 @@
 
 /* Conversión número romano a decimal */
 
+
+/* Validación números romanos validos */
+
 const validacion = /^(?=[MDCLXVI])M{0,3}(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$/
 
+
+/* Creación funcion para convertir numero Romano a Decimal */
 
 function convertRomanToDecimal(numberRoman) {
 
@@ -59,10 +64,15 @@ function convertRomanToDecimal(numberRoman) {
 
 /* Conversión número decimal a romano */
 
+
+/* Valores validos para su conversión */
+
 const millares = ['M', 'MM', 'MMM']
 const centenas = ['C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM']
 const decenas =  ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC']
 const unidades = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
+
+/* Inicio funcion conversión Arabico a Romano */
 
 function convertArabicoToRomano(numberArabico) {
 
@@ -115,6 +125,8 @@ function convertArabicoToRomano(numberArabico) {
     return `El número ${lecturaNumber} en Romano es: ${resultado}`
 
 }
+
+/* Exportar los modulos para poder usarlos en otro archivo */
 
 module.exports = {
     convertArabicoToRomano,
