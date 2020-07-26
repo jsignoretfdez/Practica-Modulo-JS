@@ -13,7 +13,7 @@ const validacion = /^(?=[MDCLXVI])M{0,3}(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V
 function convertRomanToDecimal(numberRoman) {
 
     if (!validacion.test(numberRoman.toUpperCase())) {
-        let mensajeError = console.log(`${numberRoman} No es un número Romano válido.`)
+        const mensajeError = console.log(`${numberRoman} No es un número Romano válido.`)
         return mensajeError
     }
 
@@ -59,7 +59,7 @@ function convertRomanToDecimal(numberRoman) {
 
         return resultado
     })
-    return `El número ${numberRoman} es en decimal ${result}`
+    return `El número romano: ${numberRoman} en número decimal es: ${result}`
 }
 
 /* Conversión número decimal a romano */
@@ -122,7 +122,7 @@ function convertArabicoToRomano(numberArabico) {
         }
     }
 
-    return `El número ${lecturaNumber} en Romano es: ${resultado}`
+    return `El número Arábico: ${lecturaNumber} en número Romano es: ${resultado}`
 
 }
 

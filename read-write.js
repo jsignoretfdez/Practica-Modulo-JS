@@ -6,7 +6,7 @@
  */
 
 const fs = require('fs');
-let convert = require ('./converter.js')
+const convert = require ('./converter.js')
 
 const leerAsincrono = function () {
     return new Promise(resolve => {
@@ -29,7 +29,7 @@ const leerAsincrono = function () {
                 }
             })
 
-        }, 3000);
+        }, 2000);
     });
 }
 
@@ -39,9 +39,9 @@ const leerSincrono = function () {
             let leerSync = fs.readFileSync('datos.json')
             let convertirDec = JSON.parse(leerSync).decimal2
             let convertirRom = JSON.parse(leerSync).romano2
-            console.log('Lectura de Datos Sincrona')
+            console.log('Lectura de Datos Síncrona')
 
-            fs.writeFileSync('writeMeSync.txt', `${convert.convertArabicoToRomano(convertirDec)}  y ${convert.convertRomanToDecimal(convertirRom)}`)
+            fs.writeFileSync('writeMeSync.txt', `${convert.convertArabicoToRomano(convertirDec)}  y  ${convert.convertRomanToDecimal(convertirRom)}`)
             console.log('Se ha creado el archivo de manera Sincrona')
         }, 2000);
     });
